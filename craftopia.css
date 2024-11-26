@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Matter Light" ;
+    
+    
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    
+    
+    
+}
+
+#main {
+    width: 100%;
+    background-color: #fff;
+}
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+ 
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /*  First one is top and bottim (30px) ,second one is left and right (50px)  */
+    padding: 30px 50px; 
+    
+  
+}
+
+#nav img {
+    width: 100px;
+}
+
+#nav #right {
+    
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+
+#nav a {
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    font-size: 1.1vw;
+    letter-spacing: -1px;
+}
+
+#nav i{
+    margin-top: 3px;
+}
+
+#home #homemain {
+   width: 100%;
+   
+   padding: 8vw 11vw;
+   padding-top: 2vw;
+   /* background-color: aliceblue; */
+}
+
+.inline-heading {
+    display: flex; /* Arrange child elements in a row */
+    gap: 55px; /* Add space between the headings */
+}
+
+.inline-heading h1 {
+    margin: 0; /* Remove extra spacing */
+}
+
+#home #homemain h1 {
+    color: transparent;
+    -webkit-text-stroke: 1.2px black;
+    font-size: 130px;
+    font-weight: 500;
+}
+
+#home #homemain #xy1{
+    font-style: italic;
+}
+
+#video {
+    position: relative; /* Ensures proper stacking context */
+    width: 99vw; /* Full width of the viewport */
+    height: 80vh; /* Full height of the viewport */
+    overflow: hidden; /* Prevents content overflow */
+}
+/* I didnt understood any jackshit over here */
+#video video {
+    position: absolute; /* Allows precise positioning */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the video */
+    width: 100vw; /* Makes the video span the entire width */
+    height: 100vh; /* Makes the video span the entire height */
+    object-fit: cover; /* Ensures the video covers the container while maintaining aspect ratio */
+    z-index: 100; /* Sends the video to the background */
+}
+
+#home #homelast {
+    
+    display: flex;
+    align-items: center;
+    justify-content: 100px;
+    gap: 90px;
+    padding: 20px 70px;
+    padding-top: 140px;
+
+
+}
+
+#home #homelast p{
+    font-size: 40px;
+}
+
+#home #homelast #b1 {
+    display: table-column;
+}
+
+#home#homelast .c1{
+    padding-bottom: 40px;
+    gap: 60px;
+}
+
+.c1 #b1 {
+    padding: 72px 144px;  /* Adds space inside the button */
+    font-size: 16px;  /* Adjusts the button's font size */
+    border-color: black;
+    font-size: 2vw;
+    background-color: transparent;
+    margin-top: 50px;
+    border-radius: 100px;  /* Rounds the button edges (10px for mild rounding) */
+    cursor: pointer;  /* Changes the cursor to a pointer on hover */
+    transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+#b1:hover {
+    color: #fff;
+    background-color: #000000;  /* Darkens the button on hover */
+}
+
+#v2{
+    padding: 20px 60px;
+    width: 600px;
+    height: 600px;
+}
+
+/* Featured is Very Important */
+
+#featured {
+    padding: 10vw 11vw;
+    background-color: #000;
+    border-top-left-radius:100px ;
+    border-top-right-radius:100px ;
+}
+
+#featured .fheading h1 {
+    color: #fff;
+    text-decoration: none;
+    font-size: 165px;
+    color: transparent;
+    -webkit-text-stroke: 1.2px rgb(255, 255, 255);
+    font-weight: 550;
+}
+
+#featured .fheading #n {
+    padding-left: 270px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#featured-video{
+    padding: 10vw 0vw;
+    padding-bottom: 5vw;
+    
+}
+#featured-video video {
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+#featured-video #fuck {
+    width: 30vw;
+    color: #fff;
+    font-size:1.9vw;
+}
+
+#featured-video2{
+    padding-left: 37vw;
+    margin-top: -450px;
+}
+
+#featured-video2 #alpha2  { 
+    border-radius: 100px;
+}
+
+#featured-video2  video {
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+#featured-video2 #fuck2 {
+    width: 30vw;
+    color: #fff;
+    font-size:1.9vw;
+}
+
+/* Video 3 */
+
+#featured-video3{
+    /* padding-left: 5vw; */
+    margin-top: -350px;
+}
+
+#featured-video3 #alpha3  { 
+    border-radius: 100px;
+}
+
+#featured-video3  video {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+#featured-video3 #fuck3 {
+    width: 30vw;
+    color: #fff;
+    font-size:1.9vw;
+}
+
+/* video 4 */
+
+#featured-video4{
+    padding-left: 37vw;
+    margin-top: -150px;
+}
+
+#featured-video4 #alpha4  { 
+    border-radius: 100px;
+}
+
+#featured-video4  video {
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+#featured-video4 #fuck4 {
+    width: 30vw;
+    color: #fff;
+    font-size:1.9vw;
+}
+
+/* Video 5 */
+
+#featured-video5{
+    /* padding-left: 37vw; */
+    margin-top: -550px;
+}
+
+#featured-video5 #alpha5  { 
+    border-radius: 100px;
+}
+
+#featured-video5  video {
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+#featured-video5 #fuck5 {
+    width: 30vw;
+    color: #fff;
+    font-size:1.9vw;
+}
+
+/* video 6 */
+
+#featured-video6{
+    padding-left: 37vw;
+    margin-top: -150px;
+}
+
+#featured-video6 #alpha6  { 
+    border-radius: 100px;
+}
+
+#featured-video6  video {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+#featured-video6 #fuck6 {
+    width: 30vw;
+    color: #fff;
+    font-size:1.9vw;
+}
+
+/* video 7 */
+
+#featured-video7{
+    /* padding-left: 37vw; */
+    margin-top: -450px;
+}
+
+#featured-video7 #alpha7  { 
+    border-radius: 100px;
+}
+
+#featured-video7  video {
+    width: 500px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+#featured-video7 #fuck7 {
+    width: 30vw;
+    color: #fff;
+    font-size:1.9vw;
+}
+
+/* video 8 */
+
+#featured-video8{
+    padding-left: 37vw;
+    margin-top: -250px;
+}
+
+#featured-video8 #alpha8  { 
+    border-radius: 100px;
+}
+
+#featured-video8  video {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+#featured-video8 #fuck8 {
+    width: 30vw;
+    color: #fff;
+    font-size:1.9vw;
+}
+
+/* Video 9 */
+
+#featured-video9{
+    /* padding-left: 37vw; */
+    margin-top: -250px;
+}
+
+#featured-video9 #alpha9  { 
+    border-radius: 100px;
+}
+
+#featured-video9  video {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+#featured-video9 #fuck9 {
+    width: 30vw;
+    color: #fff;
+    font-size:1.9vw;
+}
+
+/* video10 */
+
+#featured-video10{
+    background-color: #000;
+    padding-left: 37vw;
+    margin-top: -300px;
+  
+
+}
+
+#featured-video10 #alpha10  { 
+    border-radius: 100px;
+}
+
+#featured-video10  video {
+    width: 500px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+#featured-video10 #fuck10 {
+    width: 30vw;
+    color: #fff;
+    font-size:1.9vw;
+}
+/* Black */
+
+#black {
+    background-color: #000;
+    padding-top: 5rem; /* Adds internal space */
+    margin: 0 0 5.5rem 0;
+    height: 100px;
+}
+
+
+/* Our Philosophy Division */
+
+#our-philosophy #phil{
+   
+    margin: 0;
+    padding: 0;
+   
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    padding: 5vw 11vw;
+    background-color: #ffffff;
+}
+
+#our-philosophy h1{
+    font-size: 180px;
+    font-weight: 600;
+}
+
+#our-philosophy #piyush {
+    font-style: italic;
+    font-weight: 400;
+    margin-top: -40px; 
+    font-family: "Matter Light";
+}
+
+#our-philosophy #div2{
+    padding: 0vw 10vw;
+    padding-bottom: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#our-philosophy #div2 video{
+    height: 557px;
+    width: 557px;
+    object-fit: cover;
+
+}
+
+#our-philosophy #div2 p{
+    font-size: 30px;
+    padding: 5vw;
+    width: 55vw;
+}
+
+/* ..................NEW DIV..................... */
+
+
+#resources {
+    background-color: #000;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    width: 100%;
+    padding: 15vw 11vw;
+    padding-bottom: 2vw;
+    
+
+}
+
+
+#resources h1{
+    color: #fff;
+    font-size: 150px;
+    width: 45vw;
+    font-weight: 400;
+    /* padding-bottom: -15vw; */
+}
+
+/* ..............Time for slides.................. */
+
+#slides {
+    display: flex;
+    overflow: hidden; /* Ensures no overflow outside the container */
+    background-color: #000;
+    padding: 7vw 11vw;
+    position: relative; /* Required for animation */
+}
+
+#slides .slide {
+    flex: 0 0 100%; /* Each slide takes up full width of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: slide 9s infinite; /* Sliding effect */
+}
+
+#slides .slide .img {
+    height: 300px; /* Fixed height of the image container */
+    width: 550px; /* Fixed width of the image container */
+    overflow: hidden; /* Ensures the image stays within bounds */
+    border-radius: 30px;
+}
+
+#slides .slide .img img {
+    height: 100%; /* Ensures image fills the height */
+    width: 100%; /* Ensures image fills the width */
+    object-fit: cover; /* Ensures the image covers the container */
+    display: block; /* Removes inline space around images */
+}
+
+.slide h3 {
+    margin-top: 20px;
+    font-size: 1.3vw;
+    width: 30vw;
+    color: #fff;
+    text-align: center;
+}
+
+/* Keyframes for sliding effect */
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* ....................Now its time to sell Some courses ❤️.................. */
+
+#courses {
+    background-color: #000;
+    padding: 8vw 11vw;
+    padding-left: 45vw;
+}
+
+#courses p {
+    width: 35vw;
+    color: #fff;
+    font-size: 2vw;
+}
+
+#courses button {
+    padding: 1vw 1vw;
+    margin-top: 3vw;
+    width: 300px;
+    height: 150px;
+    border-radius: 100px;
+    font-size: 1.5vw;
+    background-color: transparent;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: #fff; /* Correct way to specify just the border color */
+    color: #fff;
+}
+
+#courses button:hover{
+    color: #000;
+    background-color: rgb(255, 255, 255);
+}
+
+/*...........................Lex GOOOO further.........................*/
+/* Styling for the body */
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent horizontal scroll */
+    background-color: #f0f0f0; /* Optional for visual clarity */
+}
+
+/* Styling for the container */
+#horizontal-flow {
+    padding: 10vw 0vw;
+    
+    width: 100%; /* Full width of the screen */
+    height: 10vw; /* Height of the container */
+    overflow: hidden; /* Hide text outside the container bounds */
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    position: relative; /* For absolute positioning of text */
+    background-color: #fff; /* Optional background color */
+}
+
+/* Styling for the animated text */
+#horizontal-flow::before {
+    content: "New Day - New Inspo"; /* Text content directly in CSS */
+    font-size: 7vw; /* Large font size for visibility */
+    white-space: nowrap; /* Prevent text wrapping */
+    position: absolute; /* Relative to the container */
+    animation: slideText 30s linear infinite; /* Smooth infinite animation */
+    padding-right: 20vw; /* Space between repeated text */
+    color: #333; /* Text color */
+    font-size: 8vw;
+}
+
+/* Keyframe animation for sliding text */
+@keyframes slideText {
+    0% {
+        transform: translateX(100%); /* Start off-screen on the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End off-screen on the left */
+    }
+}
+
+/* ...........Externals.......... */
+
+#main #externals {
+    background-color: #000;
+    padding: 14vw 10vw;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
